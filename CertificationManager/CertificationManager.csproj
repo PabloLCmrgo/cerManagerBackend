@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CertificationManager.Core.Abstractions\CertificationManager.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\CertificationManager.Core\CertificationManager.Core.csproj" />
+    <ProjectReference Include="..\CertificationManager.Infrastructure.Abstractions\CertificationManager.Infrastructure.Abstractions.csproj" />
+    <ProjectReference Include="..\CertificationManager.Infrastructure\CertificationManager.Infrastructure.csproj" />
+    <ProjectReference Include="..\CertificationManager.Shared\CertificationManager.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

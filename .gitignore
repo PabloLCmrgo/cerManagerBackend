@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/*
+/CertificationManager.Core.Abstractions/bin/*
+/CertificationManager.Core.Abstractions/obj/*
+/CertificationManager.Core/bin/*
+/CertificationManager.Core/obj/*
+/CertificationManager.Infrastructure.Abstractions/bin/*
+/CertificationManager.Infrastructure.Abstractions/obj/*
+/CertificationManager.Infrastructure/bin/*
+/CertificationManager.Infrastructure/obj/*
+/CertificationManager.Shared/obj/*
+/CertificationManager.Shared/bin/*
+/CertificationManager/bin/*
+/CertificationManager/obj/*
