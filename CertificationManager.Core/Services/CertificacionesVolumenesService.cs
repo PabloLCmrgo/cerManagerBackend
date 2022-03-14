@@ -75,5 +75,17 @@ namespace CertificationManager.Core.Services
             }
         }
 
+        public async Task<ResultDto<List<ResponseUspWebPeriodosObtener>>> UspWebPeriodosObtener(int? id_periodo)
+        {
+            try
+            {
+                var response = await unitOfWork.CertificacionesVolumenes.UspWebPeriodosObtener(id_periodo);
+                return new ResultDto<List<ResponseUspWebPeriodosObtener>>(mapper.Map<List<ResponseUspWebPeriodosObtener>>(response));
+            }
+            catch (Exception ex)
+            {
+                return new ResultDto<List<ResponseUspWebPeriodosObtener>>() { StatusResult = ResultStatus.Failure, Message = "El id_certificacion_volumen es incorrecto" };
+            }
+        }
     }
 }

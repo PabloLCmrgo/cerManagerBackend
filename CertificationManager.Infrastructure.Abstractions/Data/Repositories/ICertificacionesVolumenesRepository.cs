@@ -9,5 +9,6 @@ namespace CertificationManager.Infrastructure.Abstractions.Data.Repositories
     {
         
         Task<List<ResponseUspWebCertificacionesVolumenesPagoDetallesObtener>> UspWebCertificacionesVolumenesPagoDetallesObtener(int id_certificacion_volumen);
+        Task<List<ResponseUspWebPeriodosObtener>> UspWebPeriodosObtener(int? id_periodo);
     }
 }

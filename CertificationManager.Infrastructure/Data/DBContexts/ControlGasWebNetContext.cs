@@ -15,6 +15,8 @@ namespace CertificationManager.Infrastructure.Data.DBContexts
         public virtual DbSet<CertificacionesVolumenes> CertificacionesVolumenes { get; set; }
 
         public virtual DbSet<ResponseUspWebCertificacionesVolumenesPagoDetallesObtener> UspWebCertificacionesVolumenesPagoDetallesObtener { get; set; }
+        public virtual DbSet<ResponseUspWebPeriodosObtener> UspWebPeriodosObtener { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

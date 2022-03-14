@@ -52,5 +52,24 @@ namespace CertificationManager.Api.v1.Controllers
                 return null;
             }
         }
+
+        [HttpGet]
+        
+        [Route("periodos")]
+        public async Task<ResultDto<List<ResponseUspWebPeriodosObtener>>> GetPeriodo(int? id_periodo)
+        {
+            try
+            {
+
+                var rng = new Random();
+                var r = await this._certService.UspWebPeriodosObtener(id_periodo);
+                return r;
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+        }
     }
 }

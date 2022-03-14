@@ -28,5 +28,16 @@ namespace CertificationManager.Infrastructure.Data.Repositories
 
             return tipo;
         }
+
+        public async Task<List<ResponseUspWebPeriodosObtener>> UspWebPeriodosObtener(int? id_periodo)
+        {
+
+            var tipo = new List<ResponseUspWebPeriodosObtener>();
+            tipo = await (this.context as SGDObrasContext).UspWebPeriodosObtener
+                .FromSqlRaw(id_periodo != null ? $"exec [cer].[usp_web_periodos_obtener] @id_periodo = {id_periodo} with RECOMPILE":
+                $"exec [cer].[usp_web_periodos_obtener] with RECOMPILE").ToListAsync();
+
+            return tipo;
+        }
     }
 }

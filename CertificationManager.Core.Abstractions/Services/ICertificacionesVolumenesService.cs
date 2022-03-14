@@ -16,5 +16,7 @@ namespace CertificationManager.Core.Abstractions.Services
         Task<ResultDto<bool>> Delete(Guid id);
         Task<ResultDto<int>> Post(ClientesDto ClientesDto);
         Task<ResultDto<List<ResponseUspWebCertificacionesVolumenesPagoDetallesObtener>>> UspWebCertificacionesVolumenesPagoDetallesObtener(int id_certificacion_volumen);
+        Task<ResultDto<List<ResponseUspWebPeriodosObtener>>> UspWebPeriodosObtener(int? id_periodo);
+
     }
 }
